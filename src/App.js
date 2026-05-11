@@ -130,8 +130,6 @@ export default function App() {
       }
     };
     fetchOrders();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  },[]);
 
   // SAVE DATA LOCALLY ON EVERY CHANGE
   useEffect(() => { localStorage.setItem('dk_products', JSON.stringify(products)); },[products]);
